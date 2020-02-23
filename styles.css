@@ -1,0 +1,208 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.column {
+    padding: 10px;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+.column-content {
+    float: left;
+    background-color: #B2D6FF;
+    height: 100%;
+    width: 100%;
+}
+ 
+ .avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+  }
+  .avatar img {
+    border-radius: 40px;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .username {
+    margin-top: 30px;
+  }
+  
+  .comment {
+    margin: 10px;
+    overflow: hidden;  /* This is important */
+  }
+
+  .page-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+  }
+
+  .section-container {
+    display: flex;
+    /* margin: 10px; */
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .header {
+      display: flex;
+      width:100%;
+      height:100px;
+      background-color: #bc5a45;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      font-size: xx-large;
+      font-style: italic;
+      color: white;
+  }
+
+  #dishResults a {
+    color: #f18973
+  }
+
+  .footer a {
+    color: white;
+  }
+
+  a:hover {
+    color:#b2b2b2;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .footer {
+    display: flex;
+    width:100%;
+    height:50px;
+    margin-top: auto;
+    background-color: #bc5a45;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+      display: flex;
+      width: 100%;
+      height: 150px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      background-color:#f4e1d2;;
+  }
+
+  .forecast {
+      text-align: center;
+      width:100%;
+      height: 50px;
+  }
+
+  #weatherResults {
+      width: 100%;
+      height: 400px;
+      background-color: white;
+      text-align:center;
+  }
+  
+  h2 {
+      color: slategray;
+  }
+
+  .row {
+    text-align: center;
+    justify-content: center;
+  }
+  .col {
+    border-top: 2px solid #f18973;
+  }
+
+
+  @media only screen and (min-width: 960px) {
+    .day-container {
+        margin: 5px;
+        justify-content: space-around;
+        align-items: center;
+        /* width: 18%; */
+        height: 100%;
+        text-align:center;
+        flex-direction: column;
+        background-color: white;
+        flex: 1;
+        place-self: flex-start;
+      }
+      
+      .section-container{
+          flex-direction: row;
+          background-color: white;
+          margin:10px;
+      }
+
+      .col {
+        min-width: 250px;
+        max-width: 300px;
+      }
+  }
+
+  @media only screen and (min-width: 351px) and (max-width: 959px) {
+    .day-container {
+        margin: 5px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        text-align:center;
+        height: auto;
+        flex-direction: column;
+        background-color: white;
+        flex: 1;
+        place-self: flex-start;
+      }
+
+      .col {
+        min-width: 250px;
+        max-width: 300px;
+      }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .day-container {
+        margin: 5px;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        text-align:center;
+        height: auto;
+        flex-direction: column;
+        background-color: white;
+        flex: 1;
+        place-self: flex-start;
+      }
+      .section-container{
+        flex-direction: column;
+    }
+  }
